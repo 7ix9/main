@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="null.css">
+	<link rel="stylesheet" href="game2.css">
+	<link rel="icon" href="fire.png">
+	<title>Generate random numbers</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="head">
+			<h1>Numbers</h1>
+			<a href="index.html" id="home"><img src="home.png" alt="pic" width="50px" height="100%"></a>
+		</header>
+		<header class="lang">
+			<p class="chooseLang">Choose language:</p>
+			<a href="french2.html"><img id="fr" src="fr.png" alt="pic"></a>
+		</header>
+		<div class="wrapp">
+			<p class="text">Click on the button to generate a number from 10 to 1000</p>
+			<div class="btn"><button onclick="function randomBetween(min,max) {
+				return Math.random()*(max-min)+min
+			}
+		
+			alert('The number: ' + Math.ceil(randomBetween(10,1000)))">Generate!</button></div>
+		</div>
+		<footer>
+			<h2>contact me <a href="mailto:kurbannnn.e@gmail.com" class="contact">here</a></h2>
+		</footer>
+	</div>
+	<script src="script2.js"></script>
+</body>
+</html>
